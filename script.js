@@ -1,5 +1,5 @@
 if (document.readyState) {
-  const yearToLive = 90;
+  const yearToLive = 60;
   var Birth = moment("03/06/1992", "DD/MM/YYYY");
   var End = Birth.clone().add(yearToLive, "years");
   var Now = moment();
