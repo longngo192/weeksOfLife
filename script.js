@@ -21,12 +21,13 @@ if (document.readyState) {
     var remain = weeks;
     var result = "";
     var count = 0;
+    var currentYear = 1;
     while (remain > 0) {
       remain -= weekYear;
       if (remain < weekYear) {
         weekYear = remain;
       }
-      result += "<div class='year'>";
+      result += "<div class='year'><span>   "+currentYear+"   </span>";
       for (let index = 0; index < weekYear; index++) {
         if (count == currentWeek) {
           result += currentBox;
