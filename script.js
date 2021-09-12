@@ -39,10 +39,11 @@ if (document.readyState) {
         } else {
             result += box;
         }
-        currentYear++;
+        
         count++;
       }
       result += "</div>";
+      currentYear++;
     }
     return result;
   };
